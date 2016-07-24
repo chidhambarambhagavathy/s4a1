@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CSS Speech Bubble		
+	</title>
+	<style>
+		.box {
+			width: 500px;
+			height: 200px;
+			line-height: 200px;
+			background-color: #87EAF9;
+			position: absolute;
+			left: 50px;
+			top: 25px;
+			text-align: center;
+			border-radius: 20px;
+		}
+
+		.box:after {
+			content: "";
+			position: absolute;
+			border-top: 15px solid transparent;
+			border-bottom: 15px solid transparent;
+			border-right: 25px solid #87EAF9;
+			position: absolute;
+			left:-25px;
+			top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<p class="box"></p>
+</body>
+</html>
